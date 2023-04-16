@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #fefae0;
+  flex-direction: column;
+}
+.resultScreen{
+  text-align: right;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  margin: auto;
+  padding: 10px 14px 0 10px;
+  box-sizing: border-box;
+  width: 220px;
+  height: 3.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+tr{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td{
+  cursor: pointer;
+  display: block;
+  width: 3rem;
+  padding: 5px;
+  text-align: center;
+  background: #dadce0;
+  color: #202124;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 4px;
 }
+
+td:hover{
+  border: 1px solid #b8b9bc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+td:active{
+  border: 1px solid #909090;
+  background-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.error p{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2px;
+  color: red;
+  font-size: 0.7rem;
+  font-style: initial;
+}
+
+h1{
+  color: #a1a1a1;
+  font-size: 40px;
+  margin-bottom: 5px;
+  font-variation-settings: 'wght' 900;
+  font-family: monospace;
+}
+
